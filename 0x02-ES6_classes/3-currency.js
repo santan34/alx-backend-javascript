@@ -1,3 +1,6 @@
+/**
+ * A currency class
+ */
 export default class Curreny {
   /**
    * creatse a @new currency class @see {@link Curreny}
