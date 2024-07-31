@@ -1,3 +1,3 @@
-export default function getStudentsByLocation(list, city) {
-  return list.filter((elem) => elem.location === city);
-}
+const getStudentsByLocation = (list, city) => list.filter((elem) => elem.location === city);
+
+export default getStudentsByLocation;
