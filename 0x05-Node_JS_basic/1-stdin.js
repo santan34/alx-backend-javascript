@@ -7,6 +7,8 @@ process.stdin.on('readable', () => {
 
   if (chunk) {
     process.stdout.write(`Your name is: ${chunk}`);
-    process.stdout.write('This important software is now closing\n');
+    process.stdin.on('end', () => {
+      process.stdout.write('This important software is now closing\n');
+    });
   }
 });
