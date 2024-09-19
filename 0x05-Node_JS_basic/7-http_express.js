@@ -40,8 +40,8 @@ app.get('/students', (req, res) => {
     .then(({ a, b, c }) => {
       res.send(`This is the list of our students\n${a}\n${b}\n${c}`);
     })
-    .catch((error) => {
-      res.status(500).send(`Error: ${error.message}`);
+    .catch(() => {
+      res.status(500).send('This is the list of our students\nCannot load the database');
     });
 });
 
