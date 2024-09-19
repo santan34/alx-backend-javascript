@@ -43,9 +43,9 @@ const app = createServer((req, res) => {
           res.write(`${c}`);
           res.end();
         })
-        .catch((error) => {
+        .catch(() => {
           res.statusCode = 500;
-          res.write(`Error: ${error.message}`);
+          res.write('This is the list of our students\nCannot load the database');
           res.end();
         });
       break;
