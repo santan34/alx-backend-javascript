@@ -1,5 +1,8 @@
-const calculateNumber = require('./0-calcul');
-const assert = require('assert');
+// const calculateNumber = require('./0-calcul');
+// const assert = require('assert');
+
+import calculateNumber from './0-calcul.js'
+import assert from 'assert'
 
 describe('Testing a function to add two rounded numbers', function () {
   it('should give the correct sum of ints', function () {

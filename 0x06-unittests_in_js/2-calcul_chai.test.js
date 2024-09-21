@@ -11,7 +11,7 @@ describe("test for sum", function () {
         expect(calculateNumber('SUM', 1.4, 2.6)).to.equal(4);
     });
     it("adding one negative and one positive", function () {
-        expect(calculateNumber('SUM', -1.4, 2.6)).to.equal(1);
+        expect(calculateNumber('SUM', -1.4, 2.6)).to.equal(2);
     });
     it("adding whole numbers", function () {
         expect(calculateNumber('SUM', 2, 3)).to.equal(5);
@@ -35,10 +35,10 @@ describe("test for sum", function () {
 
 describe("test for subtract", function () {
     it("subtracting two negative numbers", function () {
-        expect(calculateNumber('SUBTRACT', -1.4, -2.6)).to.equal(1);
+        expect(calculateNumber('SUBTRACT', -1.4, -2.6)).to.equal(2);
     });
     it("subtracting two positive numbers", function () {
-        expect(calculateNumber('SUBTRACT', 2.6, 1.4)).to.equal(1);
+        expect(calculateNumber('SUBTRACT', 2.6, 1.4)).to.equal(2);
     });
     it("subtracting one negative and one positive", function () {
         expect(calculateNumber('SUBTRACT', -1.4, 2.6)).to.equal(-4);
@@ -47,7 +47,7 @@ describe("test for subtract", function () {
         expect(calculateNumber('SUBTRACT', 5, 3)).to.equal(2);
     });
     it("subtracting large numbers", function () {
-        expect(calculateNumber('SUBTRACT', 2000000.6, 1000000.4)).to.equal(1000000);
+        expect(calculateNumber('SUBTRACT', 2000000.6, 1000000.4)).to.equal(1000001);
     });
     it("subtracting two very small numbers", function () {
         expect(calculateNumber('SUBTRACT', 0.2, 0.1)).to.equal(0);
@@ -71,7 +71,7 @@ describe("test for divide", function () {
         expect(calculateNumber('DIVIDE', 1000000, 500000)).to.equal(2);
     });
     it("dividing two very small numbers", function () {
-        expect(calculateNumber('DIVIDE', 0.2, 0.1)).to.equal(2);
+        expect(calculateNumber('DIVIDE', 0.2, 0.1)).to.equal('Error');
     });
     it("dividing by zero", function () {
         expect(calculateNumber('DIVIDE', 1, 0)).to.equal('Error');
