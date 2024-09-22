@@ -2,6 +2,7 @@
 const chai = require('chai');
 // import { expect } from 'chai'
 const expect = chai.expect;
+const calculateNumber = require('./2-calcul_chai')
 
 describe("test for sum", function () {
     it("adding two negative numbers", function () {
