@@ -1,7 +1,7 @@
-import calculateNumber from './2-calcul_chai.js';
-// const chai = require('chai');
-import { expect } from 'chai'
-// const expect = chai.expect;
+// import calculateNumber from './2-calcul_chai.js';
+const chai = require('chai');
+// import { expect } from 'chai'
+const expect = chai.expect;
 
 describe("test for sum", function () {
     it("adding two negative numbers", function () {

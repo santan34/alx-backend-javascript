@@ -1,8 +1,8 @@
-// const calculateNumber = require('./1-calcul');
-// const assert = require('assert');
+const calculateNumber = require('./1-calcul');
+const assert = require('assert');
 
-import calculateNumber from './1-calcul.js'
-import assert from 'assert'
+// import calculateNumber from './1-calcul.js'
+// import assert from 'assert'
 
 describe("test for sum", function () {
     it("adding two negative numbers", function () {
